@@ -7,7 +7,7 @@ on:
 jobs:
   update-sqlx:
     if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/updatesqlx')
-    runs-on: ubicloud-standard-8
+    runs-on: ubuntu-latest
     permissions:
       contents: write
       pull-requests: write
