@@ -47,12 +47,12 @@ jobs:
           ref: ${{ github.event.issue.pull_request.head.ref }}
           fetch-depth: 0
 
-      - name: Checkout windmill-ee-private
-        uses: actions/checkout@v3
-        with:
-          repository: windmill-labs/windmill-ee-private
-          path: windmill-ee-private
-          token: ${{ secrets.WINDMILL_EE_PRIVATE_ACCESS }}
+      #- name: Checkout windmill-ee-private
+      #  uses: actions/checkout@v3
+      #  with:
+      #    repository: windmill-labs/windmill-ee-private
+      #    path: windmill-ee-private
+      #    token: ${{ secrets.WINDMILL_EE_PRIVATE_ACCESS }}
 
       # Cache rust dependencies
       - uses: dtolnay/rust-toolchain@stable
